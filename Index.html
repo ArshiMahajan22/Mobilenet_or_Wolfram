@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mobilenet or Wolfram?</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="Style.css">
+    </head>
+
+    <body>
+        <center>
+            <h1>Wolfram or Mobilenet?</h1>
+
+          <ol>
+            <div id="Snap">
+                <img src="Car.png" id="Img1" class="img-responsive">
+                <button class="btn btn-success" onclick="Identify();">Identify Object</button>
+              </div>
+
+            <div id="Answers">
+                <h3>Wolfram: <span id="W1">rugby ball</span></h3>
+                <h3>Mobilenet: <span id="Mobilenet"></span></h3>
+            </div>
+
+            <div id="Result1">
+                <h3 id="Guess1"></h3>
+            </div>
+
+            <hr>
+
+            <div id="Snap">
+                <img src="Hair.png" id="Img2" class="img-responsive">
+                <button class="btn btn-success" onclick="Identify1();">Identify Object</button>
+              </div>
+
+            <div id="Answers">
+                <h3>Wolfram: <span id="W2">person</span></h3>
+                <h3>Mobilenet: <span id="Mobilenet1"></span></h3>
+            </div>
+
+            <div id="Result2">
+                <h3 id="Guess2"></h3>
+            </div>
+
+            <hr>
+
+            <div id="Snap">
+                <img src="Dog.png" id="Img3" class="img-responsive">
+                <button class="btn btn-success" onclick="Identify2();">Identify Object</button>
+              </div>
+
+            <div id="Answers">
+                <h3>Wolfram: <span id="W3">animal</span></h3>
+                <h3>Mobilenet: <span id="Mobilenet2"></span></h3>
+            </div>
+
+            <div id="Result3">
+                <h3 id="Guess3"></h3>
+            </div>
+          </ol>
+        </center>
+
+          <script src="Main.js"></script>
+  </body>
+</html>
